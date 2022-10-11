@@ -1,0 +1,325 @@
+body {
+    background-color: midnightblue;
+}
+/* #triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    background-color: green;
+} */
+.moon {
+    position: absolute;
+    right: 48%;
+    background-color: whitesmoke;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    top: 5%;
+}
+
+.terrain {
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    background-color: rgb(129, 129, 129);
+}
+
+.clouds {
+    position: absolute;
+    width: 10em;
+    height: 2em;
+    background-color: rgb(156, 156, 156);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 30px;
+    top: 20%;
+    left: 30%;
+    border: solid 2px gray;
+}
+
+.cloudstwo {
+    position: absolute;
+    width: 10em;
+    height: 2em;
+    background-color: rgb(219, 219, 219);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 30px;
+    top: 18%;
+    left: 40%;
+    border: solid 2px gray;
+}
+
+.sea {
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+    background-color: rgb(13, 0, 129);
+    border-top: 2em solid rgba(29, 27, 0, 0.838);
+    overflow: hidden;
+}
+#cover {
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+    background-color: rgba(13, 0, 129, 0);
+    border-top: 2em solid rgba(29, 27, 0, 0.838);
+    overflow: hidden;
+}
+.buildingone {
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    background-color: rgb(155, 155, 155);
+    box-shadow: rgb(0, 0, 0) 0px 20px 25px -5px, rgb(0, 0, 0) 0px 10px 10px -5px;     
+    height: 18em;
+    width: 7em;
+}
+
+.buildingtwo {
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    background-color: gray;
+    box-shadow: rgb(0, 0, 0) 0px 20px 25px -5px, rgb(0, 0, 0) 0px 10px 10px -5px;   
+    height: 20em;
+    width: 7em;
+}
+
+.buildingthree {
+    position: absolute;
+    bottom: 20%;
+    left: 48%;
+    background-color: rgb(69, 69, 69);
+    box-shadow: rgb(0, 0, 0) 0px 20px 25px -5px, rgb(0, 0, 0) 0px 10px 10px -5px;     
+    height: 10em;
+    width: 7em;
+}
+
+.buildingfour {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    background-color: gray;
+    box-shadow: rgb(0, 0, 0) 0px 20px 25px -5px, rgb(0, 0, 0) 0px 10px 10px -5px; 
+    height: 9em;
+    width: 7em;
+}
+
+.buildingfive {
+    position: absolute;
+    bottom: 20%;
+    left: 60%;
+    background-color: rgb(76, 76, 76);
+    box-shadow: rgb(0, 0, 0) 0px 20px 25px -5px, rgb(0, 0, 0) 0px 10px 10px -5px; 
+    height: 17em;
+    width: 7em;
+}
+
+.buildingsix {
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    background-color: rgb(54, 54, 54);
+    box-shadow: rgb(0, 0, 0) 0px 20px 25px -5px, rgb(0, 0, 0) 0px 10px 10px -5px; 
+    height: 23em;
+    width: 7em;
+}
+
+.buildingseven {
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    background-color: rgb(116, 116, 116);
+    box-shadow: rgb(0, 0, 0) 0px 20px 25px -5px, rgb(0, 0, 0) 0px 10px 10px -5px; 
+    height: 21em;
+    width: 7em;
+}
+
+.buildingeight {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    background-color: rgb(54, 54, 54);
+    box-shadow: rgb(0, 0, 0) 0px 20px 25px -5px, rgb(0, 0, 0) 0px 10px 10px -5px; 
+    height: 13em;
+    width: 7em;
+}
+
+.buildingnine {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    background-color: rgb(92, 92, 92);
+    box-shadow: rgb(0, 0, 0) 0px 20px 25px -5px, rgb(0, 0, 0) 0px 10px 10px -5px; 
+    height: 13em;
+    width: 7em;
+}
+
+.box {
+    border-top: solid 3px rgba(144, 144, 144, 0.502);
+    border-left: solid 3px rgba(144, 144, 144, 0.432);
+}
+
+.box-windows,
+.boxo {
+    position: relative;
+}
+
+.windowe {
+    position: absolute;
+    height: 0.5em;
+    width: 1em;
+    background-color: rgba(255, 255, 255, 0.58);
+}
+
+.window {
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px black;
+}
+
+.first {
+    top: 1em;
+    left: 1em;
+}
+
+.second {
+    top: 1em;
+    left: 3em;
+}
+
+.three {
+    top: 1em;
+    left: 5em;
+}
+
+.four {
+    top: 3em;
+    left: 1em;
+}
+
+.five {
+    top: 3em;
+    left: 3em;
+}
+
+.six {
+    top: 3em;
+    left: 5em;
+}
+
+.seven {
+    top: 5em;
+    left: 1em;
+}
+
+.eight {
+    top: 5em;
+    left: 3em;
+}
+
+.nine {
+    top: 5em;
+    left: 5em;
+}
+
+.ten {
+    top: 7em;
+    left: 1em;
+}
+
+.eleven {
+    top: 7em;
+    left: 3em;
+}
+
+.twelve {
+    top: 7em;
+    left: 5em;
+}
+
+.window:hover {
+    background-color: rgb(234, 255, 0);
+}
+
+.moon:hover {
+    background-color: rgb(255, 62, 28);
+}
+
+button {
+    color: rgb(0, 0, 0);
+    background-color: rgba(227, 227, 0, 0.808);
+    padding: 5px;
+    border: solid 3px rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+
+
+
+.shado {
+    position: absolute;
+    top: 0;
+    background-color: rgba(8, 0, 84, 0.717);
+}
+
+.buildingonereverse {
+    left: 20%;
+    height: 18em;
+    width: 7em;
+}
+
+.buildingtworeverse {
+    left: 35%;
+    height: 20em;
+    width: 7em;
+}
+
+.buildingthreereverse {
+    left: 48%;
+    height: 10em;
+    width: 7em;
+}
+
+.buildingfourreverse {
+    left: 10%;
+    height: 9em;
+    width: 7em;
+}
+
+.buildingfivereverse {
+    left: 60%;
+    height: 17em;
+    width: 7em;
+}
+
+.buildingsixreverse {
+    right: 20%;
+    height: 23em;
+    width: 7em;
+}
+
+.buildingsevenreverse {
+    right: 5%;
+    height: 21em;
+    width: 7em;
+}
+
+.buildingeightreverse {
+    left: 0;
+    height: 13em;
+    width: 7em;
+}
+
+.buildingninereverse {
+    right: 0;
+    height: 13em;
+    width: 7em;
+}
